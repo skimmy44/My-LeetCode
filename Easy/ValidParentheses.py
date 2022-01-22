@@ -5,7 +5,7 @@ class Solution:
         #last in first out
         stack = []
         hash_table = {']':'[', # don't know why it gives keyerror when I put open brackets in keys
-               ')': '(',
+               ')': '(',        #!!!!because we cannot get the value when we don't what the key is!!!!
                '}': '{'}
         for i in s:
             if i in hash_table.values():
